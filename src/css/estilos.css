@@ -1,0 +1,146 @@
+body{
+
+    background-image: url(../imagens/Neon-Dunes-\ fundo\ 3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'VT323', monospace; /* Estilo da fonte do projeto */
+    color: #f3f3f3;
+    font-size: 18px; /* Tamanho da fonte */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.cartao{
+   background-color: #070d12;
+   /*background-color: #fff;
+   background-color: rgba(255,255,255,0.5);*/ /* Cor translucida, deixa a cor de fundo transparente*/
+    width: 370px;
+    border: 3px solid #e126d9; /* Cor e largura da borda do cartao*/
+    border-radius: 10px;  
+    overflow: hidden;
+}
+
+.cartao .minhas-informacoes{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cartao .minhas-informacoes img{ /*Cores de borda foto de perfil*/ 
+    border-radius: 50px; 
+    border: 4px solid #1d87db;
+}
+
+.cartao .minhas-informacoes .nome{ 
+    font-size: 26px; /* Tamanho da fonte do nome */
+}
+
+.cartao .minhas-informacoes .cargo{ 
+    font-size: 20px; /* Fonte da profissao desejada */
+    color: #b8bbc5; 
+}
+
+.cartao .conteudo{ 
+    margin-top: 15px; /* Borda lateral do site */
+}
+
+.cartao .abas{
+    display: flex;
+}
+
+.cartao .abas .aba{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.cartao .abas img{ 
+    width: 32px; /* Tamanho dos icones */
+}
+
+.cartao .abas .aba.selecionado{
+    background-color: #262626;
+}
+
+.cartao .informacoes-abas{
+    background-color: #262626;
+}
+
+.cartao .abas .aba:hover{
+    background-color: #414141;
+    
+}
+
+.informacoes-abas .informacao{
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.informacoes-abas .informacao.selecionado{
+    display: block;
+}
+
+.informacoes-abas .sub-titulo{ /* Cor, tamanho e alinhamento do testo SOBRE */
+    font-size: 22px; 
+    margin-bottom: 25px; /* Margem de distansia do titulo em relacao aos icones e o texto de apresentacao*/
+    text-align: center; 
+    color: #1d87db; 
+}
+
+.informacoes-abas .descricao{
+    font-size: 20px; /* Tamanho da fonte de aprentacao pessoal*/
+    max-height: 180px; /* Exibiçao de testo completo sem barra de rolagem*/
+    overflow-y: auto; /* Alinhamento do texto no meio eixo y, apresentacao pessoal*/
+    padding-right: 15px; /* Largura da fonte de texto apresentacao pessoal*/
+}
+
+.informacoes-abas .descricao span{ /* Cor do texto apresentação com enfase nas linguagens*/
+    color: #1d87db;
+}
+
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.redes-sociais li a{
+    width: 250px;
+    display: block;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0.3s 
+    ease-in-out;
+}
+
+.redes-sociais li a:hover{
+    opacity: 0.8;
+}
+
+.redes-sociais .curriculo{
+    background-color: #06c185;
+}
+
+.redes-sociais .linkedin{
+    background-color: #1d87db;
+}
+
+.redes-sociais .github{
+    background-color: #545454;
+}
